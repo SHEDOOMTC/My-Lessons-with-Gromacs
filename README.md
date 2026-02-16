@@ -29,7 +29,7 @@ chmod +x njiko-DNA-na-ligand.sh
 Usage
 
 ```bash
-./njiko-DNA-na-ligand.sh ligand.gro complex.gro
+./njiko-DNA-na-ligand.sh ligand.gro DNA/Protein.gro
 
 ```
 Interactive prompts:
@@ -38,6 +38,12 @@ Interactive prompts:
 How many times should the ligand be appended? [1]: 
 ```
 Enter number: 1, 2, 3, etc.
+
+Note 
+```text
+The name of the DNA/Protein.gro file will also become the name of the complex produced
+
+```
 
 The script will then:
 - Insert the ligand the specified number of times
