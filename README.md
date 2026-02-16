@@ -16,10 +16,28 @@ Requirements
 - GROMACS (required for renumbering)
 - acpype (for generating ligand .gro files)
 
+Installation
+```bash
+#Clone repository
+git clone https://github.com/<your-username>/Combine-DNA-ligand.git
+cd Combine-DNA-ligand
+#copy your ligand and DNA/protein gro file into Combine-DNA-ligand/
+# Make executable
+chmod +x merge_ligand.sh
+```
+
 Usage
+
 ```bash
 ./merge_ligand.sh ligand.gro complex.gro
 
+```
+Interactive prompts:
+
+```text
+How many times should the ligand be appended? [1]: 
+```
+Enter number: 1, 2, 3, etc.
 
 The script will then:
 - Insert the ligand the specified number of times
