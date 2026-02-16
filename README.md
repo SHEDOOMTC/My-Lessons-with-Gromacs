@@ -19,7 +19,7 @@ Requirements
 Installation
 ```bash
 #Clone repository
-git clone https://github.com/<your-username>/Combine-DNA-ligand.git
+git clone https://github.com/SHEDOOMTC/My-Lessons-with-Gromacs.git
 cd Combine-DNA-ligand
 #copy your ligand and DNA/protein gro file into Combine-DNA-ligand/
 # Make executable
