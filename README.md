@@ -39,7 +39,7 @@ How many times should the ligand be appended? [1]:
 ```
 Enter number: 1, 2, 3, etc.
 
-#Note 
+# Note 
 ```text
 The name of the DNA/Protein.gro file will also become the name of the complex produced
 
