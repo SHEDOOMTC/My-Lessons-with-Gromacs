@@ -23,13 +23,13 @@ git clone https://github.com/SHEDOOMTC/My-Lessons-with-Gromacs.git
 cd Combine-DNA-ligand
 #copy your ligand and DNA/protein gro file into Combine-DNA-ligand/
 # Make executable
-chmod +x merge_ligand.sh
+chmod +x njiko-DNA-na-ligand.sh
 ```
 
 Usage
 
 ```bash
-./merge_ligand.sh ligand.gro complex.gro
+./njiko-DNA-na-ligand.sh ligand.gro complex.gro
 
 ```
 Interactive prompts:
