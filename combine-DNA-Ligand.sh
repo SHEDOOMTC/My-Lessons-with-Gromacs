@@ -18,6 +18,9 @@ new_count=$((orig_count + insert_count))
 num=$(tail -n 2 complex.gro | head -n 1 | awk '{print substr($1,1,2)}')
 num=$((num + 1))
 
+#store the name of the ligand
+lig_name=$(awk 'NR==3 {print $2}' A01_GMX.gro)
+
 # Build the new file
 {
     # Line 1 stays the same
@@ -53,7 +56,7 @@ gmx editconf -f complex.gro -o complex_renum.gro
 
 # Use sed to replace the name and number of ligand
 
-sed 's/ 1A01 /'$num'A01 /' complex_renum.gro > complex_fixed.gro
+sed 's/ 1'$lig_name' /'$num'A01 /' complex_renum.gro > complex_fixed.gro
 
 #then rename the file back to complex.gro
 
