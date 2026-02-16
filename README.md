@@ -17,7 +17,7 @@ Requirements
 - acpype (for generating ligand .gro files)
 
 Usage
-'''bash
+```bash
 ./merge_ligand.sh ligand.gro complex.gro
 
 
