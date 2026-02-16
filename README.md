@@ -16,6 +16,17 @@ Requirements
 - GROMACS (required for renumbering)
 - acpype (for generating ligand .gro files)
 
+Usage
+'''bash
+./merge_ligand.sh ligand.gro complex.gro
+
+
+The script will then:
+- Insert the ligand the specified number of times
+- Update the atom count and renumber residues
+- Preserve .gro formatting
+- Produce a clean, simulation‑ready complex.gro 
+
 
 
 
